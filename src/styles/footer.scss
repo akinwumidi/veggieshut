@@ -1,0 +1,79 @@
+.footer {
+  padding: 50px 0 30px 0px;
+  background: var(--green-gradient);
+}
+
+.footer__logo p {
+  font-size: 0.9rem;
+  color: var(--light-text-color-2);
+  line-height: 28px;
+  margin-top: 15px;
+}
+
+.delivery__time-item {
+  background: transparent !important;
+}
+
+.delivery__time-item span {
+  font-size: 0.95rem;
+  color: var(--light-text-color-3);
+}
+
+.delivery__time-item p {
+  color: var(--light-text-color-3);
+}
+
+.footer__title {
+  font-size: 1rem;
+  color: var(--light-text-color-3);
+  font-weight: 600;
+}
+
+.newsletter {
+  display: flex;
+  padding: 5px;
+  border: 1px solid var(--light-text-color-3);
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.newsletter input:focus {
+  outline: none;
+}
+
+.newsletter span {
+  background: var(--main-color);
+  padding: 5px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.newsletter span i {
+  color: var(--white-color);
+}
+
+.newsletter input::placeholder {
+  color: var(--light-text-color-3);
+}
+
+.social__links span i {
+  padding: 5px;
+  background: var(--main-color);
+  border-radius: 50%;
+  color: var(--white-color);
+}
+
+.copyright__text {
+  font-size: 0.8rem;
+  color: var(--main-color);
+}

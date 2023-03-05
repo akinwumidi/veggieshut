@@ -1,0 +1,53 @@
+.feauture__title span {
+  color: var(--main-color);
+}
+
+.feature__text {
+  color: var(--gray-color);
+}
+
+.food__category {
+  background: var(--main-color);
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 0;
+  border-radius: 8px;
+}
+
+.food__category button {
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  background: transparent;
+  color: var(--white-color);
+  border-radius: 5px;
+}
+
+.food__category button:hover {
+  background: var(--white-color);
+  color: var(--main-color);
+}
+
+.food__category button img {
+  width: 20px;
+  height: 20px;
+}
+
+.foodBtnActive {
+  background: var(--white-color) !important;
+  color: var(--main-color) !important;
+}
+.feature_icon svg {
+  fill: var(--main-color);
+  font-size: 3.6rem;
+  margin-bottom: 0.6rem;
+}
+
+@media only screen and (max-width: 576px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 992px) {
+}

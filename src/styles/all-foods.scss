@@ -1,0 +1,20 @@
+.search__widget,
+.sorting__widget select {
+  padding: 7px 15px;
+  border: 1px solid var(--light-gray-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search__widget input {
+  border: none;
+}
+
+.search__widget input:focus {
+  outline: none;
+}
+
+.related__Product-title {
+  font-weight: 600;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,29 @@
+:root {
+  // GREEN THEME ONE (1)
+  --main-color: #008000;
+  --main-background-color: #fcfcfc;
+  --main-color-dark: #47ad47;
+  --white-color: #fff;
+  --black-color: #000;
+  --light-black-color: rgba(0, 0, 0, 0.534);
+  --gray-color: #777;
+  --light-gray-color: rgba(71, 173, 71, 0.3);
+  --light-text-color: rgba(119, 119, 119, 0.4);
+  --light-text-color-2: #333;
+  --light-text-color-3: #212245;
+  --main-gradient: linear-gradient(
+    to right,
+    rgba(168, 45, 73, 0.5),
+    rgba(228, 77, 38, 0.5)
+  );
+  --green-gradient: linear-gradient(
+    to right,
+    rgba(82, 194, 52, 0.3),
+    rgba(71, 173, 71, 0.3)
+  );
+  --milk-gradient: linear-gradient(
+    to top,
+    rgba(236, 233, 230, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+}

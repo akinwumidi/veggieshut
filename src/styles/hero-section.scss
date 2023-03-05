@@ -1,0 +1,46 @@
+.hero__content {
+  padding-top: 70px;
+}
+
+.hero-tittle {
+  font-size: 2.5rem;
+  line-height: 55px;
+}
+
+.hero-tittle span {
+  color: var(--main-color);
+}
+
+.hero__content p {
+  font-size: 1rem;
+  line-height: 30px;
+  color: var(--gray-color);
+}
+
+.hero__btns button {
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.order__btn {
+  background: var(--main-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.order__btn:hover {
+  background: var(--light-text-color-3);
+}
+
+.all__foods-btn {
+  background: transparent;
+  border: 1px solid var(--main-color) !important;
+}
+
+.all__foods-btn a {
+  color: var(--main-color);
+}
