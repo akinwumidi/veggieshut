@@ -2,12 +2,9 @@
 
 # VeggiesHut
 
-clear
-git
-
 ## Preview Application
 
-- https:// .netlify.app
+- https:// veggieshut.netlify.app
 
 ## Feautures Include
 

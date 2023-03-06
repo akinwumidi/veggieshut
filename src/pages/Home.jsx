@@ -2,7 +2,14 @@ import React, { useState, useEffect } from 'react'
 import Helmet from '../components/Helmet/Helmet'
 import { Container, Col, Row, ListGroup, ListGroupItem } from 'reactstrap'
 import { Link } from 'react-router-dom'
-import { RiWallet2Line, RiEmpathizeLine, RiCurrencyLine } from 'react-icons/ri'
+import {
+  RiWallet2Line,
+  RiEmpathizeLine,
+  RiCurrencyLine,
+  RiArrowRightLine,
+  RiCheckboxCircleLine,
+  RiShoppingBag3Line,
+} from 'react-icons/ri'
 
 import heroImg from '../assets/images/hero.svg'
 import '../styles/hero-section.scss'
@@ -69,12 +76,12 @@ const Home = () => {
 
   return (
     <Helmet title="Home">
-      <section>
-        <Container>
+      <section className="home__banner">
+        <Container className="p-0">
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content">
-                <h1 className="mb-4 hero-tittle">
+                <h1 className="mb-2 hero-tittle">
                   <span>VEGETARIAN?</span> <br />
                   not a crime!
                   <span>
@@ -92,11 +99,12 @@ const Home = () => {
 
                 <div className="hero__btns align-items-center gap-5 d-flex">
                   <button className="d-flex order__btn align-items-center justify-content-between">
-                    Order now<i class="ri-arrow-right-s-line"></i>
+                    Order now
+                    <RiShoppingBag3Line />
                   </button>
                   <button className=" all__foods-btn d-flex align-items-center justify-content-between">
                     <Link to="/allfoods">
-                      See all foods <i class="ri-shopping-cart-2-line"></i>
+                      See all foods <RiArrowRightLine />
                     </Link>
                   </button>
                 </div>
@@ -129,7 +137,7 @@ const Home = () => {
 
                 <ListGroup>
                   <ListGroupItem className="border-0 ps-0">
-                    <i class="ri-checkbox-circle-line"></i>
+                    <RiCheckboxCircleLine />
                     Fresh homemade foods
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -137,7 +145,7 @@ const Home = () => {
                     </p>
                   </ListGroupItem>
                   <ListGroupItem className="border-0 ps-0">
-                    <i class="ri-checkbox-circle-line"></i>
+                    <RiCheckboxCircleLine />
                     Fast & reliable deliveries
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -145,7 +153,7 @@ const Home = () => {
                     </p>
                   </ListGroupItem>
                   <ListGroupItem className="border-0 ps-0">
-                    <i class="ri-checkbox-circle-line"></i>
+                    <RiCheckboxCircleLine />
                     Qaulity and friendly support
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.

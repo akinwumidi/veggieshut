@@ -3,7 +3,7 @@ import { Container } from 'reactstrap'
 import '../../styles/header.scss'
 import logo from '../../assets/images/veggiesHutlogo.svg'
 import { NavLink, Link } from 'react-router-dom'
-
+import { RiUser6Line, RiMenuLine, RiShoppingBag3Line } from 'react-icons/ri'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { cartUiActions } from '../../store/shopping-cart/cartUislice'
@@ -88,17 +88,17 @@ const Header = () => {
           {/* =============  Nav Right Icons  ============== */}
           <div className="nav__right d-flex align-items-center gap-4">
             <span className="cart__icon" onClick={toggleCart}>
-              <i class="ri-shopping-basket-line"></i>
+              <RiShoppingBag3Line />
               <span className="cart__badge">{totalQuantity}</span>
             </span>
 
             <span className="user">
               <Link to="/login">
-                <i class="ri-user-line"></i>
+                <RiUser6Line />
               </Link>
             </span>
             <span className="mobile__menu" onClick={toggleMenu}>
-              <i class="ri-menu-line"></i>
+              <RiMenuLine />
             </span>
           </div>
           {/* =============  Nav Right Icons  ============== */}

@@ -1,6 +1,7 @@
 .header {
   width: 100%;
-  height: 100px;
+  // height: 100px;
+  padding: 2px 0;
   line-height: 80px;
 }
 
@@ -49,9 +50,9 @@
   color: var(--main-color) !important;
 }
 
-.cart__icon i,
-.user i,
-.mobile__menu i {
+.cart__icon svg,
+.user svg,
+.mobile__menu svg {
   font-size: 1.3rem;
   color: var(--light-text-color-3);
   cursor: pointer;
@@ -146,8 +147,9 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    width: 100%;
-    height: 50px;
+    width: 100% !important;
+    // height: 50px;
+    padding: 12px 0;
     line-height: 50px;
   }
 
