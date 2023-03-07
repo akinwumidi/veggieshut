@@ -4,6 +4,14 @@ import logo from '../../assets/images/veggiesHutlogo.svg'
 import { Link } from 'react-router-dom'
 import ColorSwatcher from '../Color-swatcher/ColorSwatcher'
 
+import {
+  RiSendPlaneLine,
+  RiLinkedinFill,
+  RiGithubLine,
+  RiTwitterLine,
+  RiFacebookFill,
+} from 'react-icons/ri'
+
 import '../../styles/footer.scss'
 
 const Footer = () => {
@@ -17,7 +25,7 @@ const Footer = () => {
             <div className="newsletter">
               <input type="email" placeholder="Enter your email"></input>
               <span>
-                <i class="ri-send-plane-line"></i>
+                <RiSendPlaneLine/>
               </span>
             </div>
 
@@ -25,22 +33,23 @@ const Footer = () => {
               <p className="m-o">Follow:</p>
               <span>
                 <Link to="https://www.linkedin.com/in/akinwumidi/">
-                  <i class="ri-facebook-fill"></i>
+                  <  RiFacebookFill
+/>
                 </Link>
               </span>
               <span>
                 <Link to="https://www.linkedin.com/in/akinwumidi/">
-                  <i class="ri-twitter-line"></i>
+                  <RiTwitterLine/>
                 </Link>
               </span>
               <span>
                 <Link to="https://www.linkedin.com/in/akinwumidi/">
-                  <i class="ri-github-line"></i>
+                  <RiGithubLine/>
                 </Link>
               </span>
               <span>
                 <Link to="https://www.linkedin.com/in/akinwumidi/">
-                  <i class="ri-linkedin-fill"></i>
+                 <RiLinkedinFill/>
                 </Link>
               </span>
             </div>

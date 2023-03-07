@@ -127,7 +127,7 @@ const Home = () => {
             </Col>
             <Col lg="6" md="6">
               <div className="why__veggieshut">
-                <h2 classname=" veggieshut-title">Why Veggies Hut?</h2>
+                <h2 className=" veggieshut-title">Why Veggies Hut?</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Nihil molestiae esse eum tempore eveniet nulla doloribus eos
