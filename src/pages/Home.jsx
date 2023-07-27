@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import Helmet from '../components/Helmet/Helmet'
-import { Container, Col, Row, ListGroup, ListGroupItem } from 'reactstrap'
+import { Container, Col, Row } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import {
   RiWallet2Line,
   RiEmpathizeLine,
   RiCurrencyLine,
   RiArrowRightLine,
-  RiCheckboxCircleLine,
   RiShoppingBag3Line,
+  RiTruckLine,
 } from 'react-icons/ri'
 
 import heroImg from '../assets/images/hero.svg'
@@ -19,13 +19,18 @@ import products from '../assets/fake-data/products.js'
 import foodcategoryImg01 from '../assets/images/hamburger.png'
 import foodcategoryImg02 from '../assets/images/pizza.png'
 import foodcategoryImg03 from '../assets/images/bread.png'
-import whyImg from '../assets/images/location.svg'
 import testimonials from '../assets/images/testimonials.svg'
 
 import ProductCard from '../components/UI/product-card/ProductCard'
 import TestimonialSlider from '../components/UI/Slider/TestimonialSlider'
 
 const feautureData = [
+  {
+    title: 'Fast Delivery',
+    icon: <RiTruckLine />,
+    desc:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nihil eius rerum, porro magnam deleniti nostrum nulla',
+  },
   {
     title: 'Pocket Friendly',
     icon: <RiWallet2Line />,
@@ -122,54 +127,6 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="6" md="6">
-              <img src={whyImg} alt="why-veggieshut" className="w-100" />
-            </Col>
-            <Col lg="6" md="6">
-              <div className="why__veggieshut">
-                <h2 className=" veggieshut-title">Why Veggies Hut?</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Nihil molestiae esse eum tempore eveniet nulla doloribus eos
-                  illum eaque obcaecati temporibus iusto debitis, nesciunt ipsam
-                  animi! Eaque voluptatum reprehenderit aut.
-                </p>
-
-                <ListGroup>
-                  <ListGroupItem className="border-0 ps-0">
-                    <RiCheckboxCircleLine />
-                    Fresh homemade foods
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Assumenda laudantium optio ducimus similique
-                    </p>
-                  </ListGroupItem>
-                  <ListGroupItem className="border-0 ps-0">
-                    <RiCheckboxCircleLine />
-                    Fast & reliable deliveries
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Assumenda laudantium optio ducimus similique
-                    </p>
-                  </ListGroupItem>
-                  <ListGroupItem className="border-0 ps-0">
-                    <RiCheckboxCircleLine />
-                    Qaulity and friendly support
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Assumenda laudantium optio ducimus similique
-                    </p>
-                  </ListGroupItem>
-                </ListGroup>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      <section>
-        <Container>
-          <Row>
             <Col lg="12" className="text-center">
               <h2>Recommended meals</h2>
             </Col>
@@ -181,7 +138,34 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="text-center">
+              <h2 className="feauture__title">You meal is one click away</h2>
+              <h2 className="feauture__title">
+                Order <span>Now !!!</span>
+              </h2>
+              <p className="mt-1 mb-4 feature__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+                perspiciatis error non deserunt, autem provident, repellendus
+                sit minus laudantium aut optio et natus inventore possimus
+                praesentium adipisci fugit, velit dicta!Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. possimus
+              </p>
+            </Col>
+            {feautureData.map((item, index) => (
+              <Col lg="3" md="4" key={index}>
+                <div className="feature__item px-3 py-3 text-left ">
+                  <span className="feature_icon">{item.icon}</span>
+                  <h5 className="fw-bold">{item.title}</h5>
+                  <p>{item.desc}</p>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
       <section>
         <Container>
           <Row>
@@ -231,41 +215,6 @@ const Home = () => {
             {allProducts.map((item, index) => (
               <Col lg="3" md="4" key={item.id} className="mt-5">
                 <ProductCard item={item} />
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
-
-      <section>
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center">
-              <h2 className="feauture__title">You meal is one click away</h2>
-              <h2 className="feauture__title">
-                Order <span>Now !!!</span>
-              </h2>
-              <p className="mt-1 mb-4 feature__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-                perspiciatis error non deserunt, autem provident, repellendus
-                sit minus laudantium aut optio et natus inventore possimus
-                praesentium adipisci fugit, velit dicta!Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Dolore perspiciatis error non
-                deserunt, autem provident, repellendus sit minus laudantium aut
-                optio et natus inventore possimus praesentium adipisci fugit,
-                velit dicta!Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Dolore perspiciatis error non deserunt, autem provident,
-                repellendus sit minus laudantium aut optio et natus inventore
-                possimus
-              </p>
-            </Col>
-            {feautureData.map((item, index) => (
-              <Col lg="4" md="4" key={index}>
-                <div className="feature__item px-5 py-3 text-left ">
-                  <span className="feature_icon">{item.icon}</span>
-                  <h5 className="fw-bold">{item.title}</h5>
-                  <p>{item.desc}</p>
-                </div>
               </Col>
             ))}
           </Row>

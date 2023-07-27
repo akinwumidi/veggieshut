@@ -1,3 +1,17 @@
+.feature__item {
+  border: 0.06rem solid var(--main-color2);
+  transition: all 0.3s ease;
+}
+.feature__item:hover {
+  background: var(--green-card-gradient);
+  scale: 1.03;
+  h5,
+  p,
+  span svg {
+    fill: var(--white-color);
+    color: var(--white-color);
+  }
+}
 .feauture__title span {
   color: var(--main-color);
 }

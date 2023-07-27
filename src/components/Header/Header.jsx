@@ -43,11 +43,11 @@ const Header = () => {
   // }
 
   const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
+
   const handleNavBarScroll = () => {
     const windowOffset = window.scrollY
     windowOffset > 10 ? setNavbarScrolled(true) : setNavbarScrolled(false)
   }
-
   useEffect(() => {
     window.addEventListener('scroll', handleNavBarScroll)
 

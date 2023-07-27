@@ -20,38 +20,19 @@ const Footer = () => {
       <Container>
         <Row>
           <Col lg="3" md="4" sm="6">
-            <h5 className="footer_title">Newsletter</h5>
-            <p>Subscribe to our newsletter</p>
-            <div className="newsletter">
-              <input type="email" placeholder="Enter your email"></input>
-              <span>
-                <RiSendPlaneLine/>
-              </span>
-            </div>
-
-            <div className="social__links d-flex mt-3 align-center gap-2 justify-content-center ">
-              <p className="m-o">Follow:</p>
-              <span>
-                <Link to="https://www.linkedin.com/in/akinwumidi/">
-                  <  RiFacebookFill
-/>
-                </Link>
-              </span>
-              <span>
-                <Link to="https://www.linkedin.com/in/akinwumidi/">
-                  <RiTwitterLine/>
-                </Link>
-              </span>
-              <span>
-                <Link to="https://www.linkedin.com/in/akinwumidi/">
-                  <RiGithubLine/>
-                </Link>
-              </span>
-              <span>
-                <Link to="https://www.linkedin.com/in/akinwumidi/">
-                 <RiLinkedinFill/>
-                </Link>
-              </span>
+            <div className="footer__logo text-start">
+              <div className="logo__container  ">
+                <div className="logo ">
+                  <img src={logo} alt="logo" />
+                </div>
+                <span className="logo___name">
+                  Veggies<span className="logo__name-spice"> Hut</span>
+                </span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                minima asperiores modi rerum aliquam eos repellendus similique
+              </p>
             </div>
           </Col>
 
@@ -91,20 +72,39 @@ const Footer = () => {
               </ListGroupItem>
             </ListGroup>
           </Col>
+
           <Col lg="3" md="4" sm="6">
-            <div className="footer__logo text-start">
-              <div className="logo__container  ">
-                <div className="logo ">
-                  <img src={logo} alt="logo" />
-                </div>
-                <span className="logo___name">
-                  Veggies<span className="logo__name-spice"> Hut</span>
-                </span>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                minima asperiores modi rerum aliquam eos repellendus similique
-              </p>
+            <h5 className="footer_title">Newsletter</h5>
+            <p>Subscribe to our newsletter</p>
+            <div className="newsletter">
+              <input type="email" placeholder="Enter your email"></input>
+              <span>
+                <RiSendPlaneLine />
+              </span>
+            </div>
+
+            <div className="social__links d-flex mt-3 align-center gap-2 justify-content-center ">
+              <p className="m-o">Follow:</p>
+              <span>
+                <Link to="https://www.linkedin.com/in/akinwumidi/">
+                  <RiFacebookFill />
+                </Link>
+              </span>
+              <span>
+                <Link to="https://www.linkedin.com/in/akinwumidi/">
+                  <RiTwitterLine />
+                </Link>
+              </span>
+              <span>
+                <Link to="https://www.linkedin.com/in/akinwumidi/">
+                  <RiGithubLine />
+                </Link>
+              </span>
+              <span>
+                <Link to="https://www.linkedin.com/in/akinwumidi/">
+                  <RiLinkedinFill />
+                </Link>
+              </span>
             </div>
           </Col>
         </Row>

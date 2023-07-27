@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux'
 import { cartActions } from '../../../store/shopping-cart/cartSlice'
 
 const ProductCard = (props) => {
-  const { id, title, image01, image02, image03, price } = props.item
+  const { id, title, image01, price } = props.item
 
   const dispatch = useDispatch()
   const addToCart = () => {

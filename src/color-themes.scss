@@ -3,6 +3,7 @@
   --main-color: #008000;
   --main-background-color: #fcfcfc;
   --main-color-dark: #47ad47;
+  --main-color2: #0aad0a;
   --white-color: #fff;
   --black-color: #000;
   --light-black-color: rgba(0, 0, 0, 0.534);
@@ -20,6 +21,11 @@
     to right,
     rgba(82, 194, 52, 0.3),
     rgba(71, 173, 71, 0.3)
+  );
+  --green-card-gradient: linear-gradient(
+    to right,
+    rgba(0, 128, 0, 0.7),
+    rgba(0, 128, 0, 0.5)
   );
   --milk-gradient: linear-gradient(
     to top,

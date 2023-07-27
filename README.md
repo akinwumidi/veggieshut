@@ -4,7 +4,7 @@
 
 ## Preview Application
 
-- https:// veggieshut.netlify.app
+- https://veggieshut.netlify.app
 
 ## Feautures Include
 

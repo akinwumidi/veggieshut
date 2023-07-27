@@ -1,0 +1,19 @@
+th {
+  text-align: center;
+}
+.cart__img-box {
+  width: 80px;
+}
+.cart__img-box img {
+  width: 100%;
+  height: 100%;
+}
+.cart__item-del i {
+  cursor: pointer;
+}
+.cart__subtotal {
+  color: var(--main-color);
+}
+.cart__page-btn button a:hover {
+  color: var(--main-color);
+}
