@@ -1,9 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// Getting data from LocalStorage if they exist
+const items = localStorage.getItem("cartItems") !== null ? JSON.parse(localStorage.getItem('cartItems')) : []
+
+const totalQuantity = localStorage.getItem("totalAmount") !== null ? JSON.parse(localStorage.getItem("totalAmount")) : 0
+
+const totalAmount = localStorage.getItem("totalAmount") !== null ? JSON.parse(localStorage.getItem("totalAmount")) : 0
+// Getting data from LocalStorage if they exist
+
+const setItemFunc = (item, totalQuantity, totalAmount) => {
+    localStorage.setItem("cartItems", JSON.stringify(item))
+    localStorage.setItem("totalQuantity", JSON.stringify(totalQuantity))
+    localStorage.setItem("totalAmount", JSON.stringify(totalAmount))
+}
+
 const initialState = {
-    cartItems: [],
-    totalQuantity: 0,
-    totalAmount: 0
+    cartItems: items,
+    totalQuantity: totalQuantity,
+    totalAmount: totalAmount
 }
 
 const cartSlice = createSlice({
@@ -38,6 +52,17 @@ const cartSlice = createSlice({
                 // initial value should be 0
             ), 0)
 
+            // Local storage Implementation
+
+            // localStorage.setItem("cartItems", JSON.stringify(state.cartItems.map((item) => item)));
+
+            // localStorage.setItem("totalAmount", JSON.stringify(state.totalAmount));
+
+            // localStorage.setItem("totalQuantity", JSON.stringify(state.totalQuantity))
+
+            setItemFunc(state.cartItems.map((item) => item), state.totalQuantity, state.totalAmount)
+            // Local storage Implementation
+
         },
 
         // ====== removeItem ======///
@@ -57,6 +82,10 @@ const cartSlice = createSlice({
                 // initial value should be 0
 
             ), 0)
+
+            // Local storage Implementation
+            setItemFunc(state.cartItems.map((item) => item), state.totalQuantity, state.totalAmount)
+            // Local storage Implementation
         },
         // ====== deleteItem ======///
         deleteItem(state, action) {
@@ -71,6 +100,9 @@ const cartSlice = createSlice({
                 // initial value should be 0
 
             ), 0)
+            // Local storage Implementation
+            setItemFunc(state.cartItems.map((item) => item), state.totalQuantity, state.totalAmount)
+            // Local storage Implementation
         },
 
         // ====== deleteItem ======///
