@@ -17,3 +17,10 @@ th {
 .cart__page-btn button a:hover {
   color: var(--main-color);
 }
+
+@media only screen and (max-width: 768px) {
+  th,
+  td {
+    font-size: 0.8rem;
+  }
+}
